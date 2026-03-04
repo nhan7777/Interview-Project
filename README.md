@@ -91,7 +91,7 @@ User action (Add / Reload / Tap image)
   - `Add Image` appends exactly one new id at the tail.
 - **Initial batch size (`initialImageLoadCount = 140`)**
   - Full reload regenerates 140 items by design (2 pages x 70 items/page).
-  - Keeps startup/reload behavior deterministic for interviewer validation.
+  - Keeps startup/reload behavior deterministic.
 - **Reload versioning (`reloadRound`)**
   - Incremented on each reload.
   - Injected into image URL query (`rt`) to separate reload sessions and reduce stale visual reuse risk.
